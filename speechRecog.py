@@ -46,7 +46,7 @@ def index():
             with audio_file as source:
                 audio_data = recognizer.record(source)
             text = recognizer.recognize_google(
-                audio_data, key=GOOGLE_SPEECH_API_KEY, language="ru-RU"
+                audio_data, key=GOOGLE_SPEECH_API_KEY, language="en-US"
             )
             extra_line = f'Your text: "{text}"'
 
